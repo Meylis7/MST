@@ -1,0 +1,63 @@
+// Header =======================
+.header {
+    padding: rem(50) 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 40;
+    @include transition;
+
+    &.stick {
+        background-color: rgba(0, 0, 0, .8);
+        backdrop-filter: blur(5px);
+    }
+
+    &_wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &_logo {
+        font-family: 'Prata';
+        font-weight: 400;
+        font-size: rem(36);
+        line-height: 1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-right: rem(200);
+    }
+
+    .nav {
+        ul {
+            display: flex;
+            align-items: center;
+            column-gap: rem(30);
+        }
+
+        a {
+            display: block;
+            font-family: 'Arial';
+            font-style: italic;
+            font-weight: 400;
+            font-size: rem(16);
+            line-height: 1;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background: #fff;
+                @include transition;
+            }
+        }
+    }
+}

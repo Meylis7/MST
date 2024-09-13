@@ -1,0 +1,100 @@
+// Desktop hover ==========================
+@media (hover: hover) {
+
+    // Header =====
+    .header {
+        .nav {
+            a {
+                &:hover {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // Hero ======
+    .hero {
+        &_info {
+            &-link:hover {
+                background: #4b4b5d;
+                color: #fff;
+            }
+        }
+    }
+
+    // Contact ===========
+    .contact {
+        &_form {
+            &-btn:hover {
+                background: #4b4b5d;
+                color: #fff;
+            }
+        }
+    }
+
+    // Footer =========
+    .footer {
+        &_nav {
+            a {
+                &:hover {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Mobile touch ============================
+@media (hover: none) {
+
+    // Header =====
+    .header {
+        .nav {
+            a {
+                &:active {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // Hero ======
+    .hero {
+        &_info {
+            &-link:active {
+                background: #4b4b5d;
+                color: #fff;
+            }
+        }
+    }
+
+    // Contact ===========
+    .contact {
+        &_form {
+            &-btn:active {
+                background: #4b4b5d;
+                color: #fff;
+            }
+        }
+    }
+
+    // Footer =========
+    .footer {
+        &_nav {
+            a {
+                &:active {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

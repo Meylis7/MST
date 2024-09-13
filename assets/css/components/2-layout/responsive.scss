@@ -1,0 +1,72 @@
+// 1620 ========================
+@include xlg-xxxlg {
+
+    // Header ===============
+    .header {
+        background-color: rgba(0, 0, 0, .8);
+        backdrop-filter: blur(5px);
+    }
+
+    // Advert =============
+    .advert {
+        &_info {
+            &-list {
+                li {
+                    &::before {
+                        min-width: 40px;
+                        height: 30px;
+                    }
+                }
+
+                p {
+                    font-size: rem(18);
+                }
+            }
+        }
+    }
+
+    // Contact ==============
+    .contact {
+        &_box {
+            &::after {
+                width: 560px;
+            }
+        }
+
+        &_form {
+            max-width: rem(670);
+        }
+
+        &_photo {
+            right: 100px;
+        }
+    }
+}
+
+// 1200 ========================
+@include xlg-xxlg {}
+
+// 1100 =======================
+@include lg-xxlg {
+
+    .auto_container {
+        padding: 0 35px;
+    }
+
+}
+
+// 1000 ======================
+@include lg-xlg {}
+
+// 750 ========================
+@include lg-lg {}
+
+// 650 =======================
+@include md-sm {}
+
+// 400 ===========================
+@include md-xsm {
+    .auto_container {
+        padding: 0 20px;
+    }
+}
