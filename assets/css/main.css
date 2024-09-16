@@ -342,7 +342,6 @@ li {
   display: block;
 }
 .footer_order-link {
-  width: 76px;
   font-family: "Arial";
   font-style: italic;
   font-weight: 400;
@@ -594,15 +593,15 @@ li {
 .hero_info-title {
   font-family: "Prata";
   font-weight: 400;
-  font-size: 5rem;
-  line-height: 1;
+  font-size: 3.75rem;
+  line-height: 1.3;
   margin-bottom: 3.125rem;
 }
 .hero_info-subtitle {
   font-family: "Arial";
   font-weight: 400;
-  font-size: 3.125rem;
-  line-height: 1;
+  font-size: 1.875rem;
+  line-height: 1.3;
   margin-bottom: 4rem;
 }
 .hero_info-list li {
@@ -649,7 +648,6 @@ li {
   margin: 0 0.9375rem 0 0.4375rem;
 }
 .hero_info-link {
-  width: 91px;
   font-family: "Arial";
   font-weight: 700;
   font-size: 1.5rem;
@@ -711,6 +709,9 @@ li {
   height: 100%;
   object-fit: contain;
   -o-object-fit: contain;
+}
+.advert_info {
+  min-width: calc(33.33% - 40px);
 }
 .advert_info-list li {
   display: -webkit-box;
