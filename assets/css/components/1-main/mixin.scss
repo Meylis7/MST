@@ -77,7 +77,7 @@
 
 
 @mixin md-sm {
-    @media (max-width: 650px) {
+    @media (max-width: 670px) {
         @content;
     }
 }
@@ -95,13 +95,13 @@
 }
 
 @mixin lg-xxlg {
-    @media (max-width: 1100px) {
+    @media (max-width: 1024px) {
         @content;
     }
 }
 
 @mixin xlg-xxlg {
-    @media (max-width: 1200px) {
+    @media (max-width: 1400px) {
         @content;
     }
 }

@@ -1,4 +1,14 @@
 
+// var ==========================
+let burger = document.querySelector('.burger');
+let nav = document.querySelector('.nav');
+let body = document.querySelector('body');
+
+function sleep(time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+}
+
+
 window.onscroll = function () {
     scrollPosition = Math.round(window.scrollY);
 
@@ -9,6 +19,22 @@ window.onscroll = function () {
     }
 };
 
+window.onclick = function (e) {
+    if (nav.classList.contains('active') && !e.target.closest('.nav ul')) {
+        nav.classList.remove('active')
+    }
+}
+
+// Clicks ======================================================
+
+if (burger != undefined) {
+    burger.addEventListener('click', function () {
+        sleep(2).then(() => {
+            nav.classList.toggle('active');
+            body.classList.toggle('active');
+        });
+    });
+}
 
 // Slider =========================================================
 const prevBtn = document.querySelector('.prev');

@@ -63,6 +63,16 @@
                 }
             }
         }
+
+        .burger {
+            svg {
+                &:active {
+                    path {
+                        fill: #757575;
+                    }
+                }
+            }
+        }
     }
 
     // Hero ======
